@@ -1,0 +1,7 @@
+{
+  "name": "YAZHI – Personal AI Call Assistant",
+  "description": "Your Personal AI. Your Calls. Your Control. Intelligent call screening, real-time Gemini voice conversation, and instant Telegram summaries for Sakthinathan Jayakumar.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

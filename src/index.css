@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #080B14;
+    --card-dark: #151B2B;
+    --card-surface: #0E1322;
+    --border-dark: #1E293B;
+    --accent-blue: #477BFF;
+  }
+
+  body {
+    background-color: #080B14;
+    color: #F8FAFC;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1020;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Sound wave animation */
+@keyframes wave-pulse {
+  0%, 100% { height: 8px; }
+  50% { height: 32px; }
+}
+
+.animate-wave-1 { animation: wave-pulse 1.2s ease-in-out infinite; }
+.animate-wave-2 { animation: wave-pulse 1.2s ease-in-out 0.2s infinite; }
+.animate-wave-3 { animation: wave-pulse 1.2s ease-in-out 0.4s infinite; }
+.animate-wave-4 { animation: wave-pulse 1.2s ease-in-out 0.1s infinite; }
+.animate-wave-5 { animation: wave-pulse 1.2s ease-in-out 0.3s infinite; }
